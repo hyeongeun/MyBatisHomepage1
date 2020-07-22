@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.java.fileBoard.model.mapper.FileBoardMapper">
+
+	<select id="fileBoard_group_number_max" resultType="int">
+		select nvl(max(group_number),0) from board
+	</select>
+	
+
+
+
+
+</mapper>
